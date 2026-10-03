@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rezervasyon | Muhammed K - Luxury Hotel & Suites</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="particles" id="particleContainer"></div>
+      <div class="brand-logo-container">
+        <div class="brand-name large">Muhammed K</div>
+        <div class="brand-sub">Luxury Hotel & Suites</div>
+      </div>
+      <div class="intro-progress"></div>
+    </div>
+
+    <header class="navbar">
+      <a href="index.html" class="hotel-logo">
+        <div class="brand-logo-container">
+          <div class="brand-name">Muhammed K</div>
+          <div class="brand-sub">Luxury Hotel & Suites</div>
+        </div>
+      </a>
+
+      <button
+        class="hamburger-btn"
+        id="hamburgerBtn"
+        aria-label="Menüyü Aç/Kapat"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house nav-icon"></i> Ana Sayfa
+            </a>
+          </li>
+          <li><a href="otellerimiz.html">Otellerimiz</a></li>
+          <li><a href="rezervasyon.html" class="active">Rezervasyon</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="trust-badge">
+        <i class="fa-solid fa-key"></i> ANINDA ONAYLI REZERVASYON
+      </div>
+      <h1>Ayrıcalıklı Konaklamanızı Planlayın</h1>
+      <p>
+        Kişiselleştirilmiş konaklama deneyiminizi hemen planlayın. Lüks, konfor
+        ve kusursuz hizmet sizi bekliyor.
+      </p>
+    </section>
+
+    <main class="booking-container">
+      <div class="booking-card shimmer-card">
+        <form id="bookingForm">
+          <div class="section-title">
+            <i class="fa-solid fa-bed"></i> 1. Konaklama & Mülk Seçimi
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group full-width">
+              <label for="hotelSelect">SEÇKİN OTEL / LOKASYON</label>
+              <select class="form-control" id="hotelSelect" required>
+                <option value="" disabled selected>
+                  Lütfen konaklamak istediğiniz tesisi seçiniz...
+                </option>
+                <option value="Muhammed K Çeşme Sahil Oteli" data-price="18500">
+                  Muhammed K Çeşme Sahil Oteli (₺18.500 / Gece)
+                </option>
+                <option
+                  value="Muhammed K Palandöken Dağ Evi"
+                  data-price="14200"
+                >
+                  Muhammed K Palandöken Dağ Evi (₺14.200 / Gece)
+                </option>
+                <option
+                  value="Muhammed K Çırağan Boğaz Sarayı"
+                  data-price="32500"
+                >
+                  Muhammed K Çırağan Boğaz Sarayı (₺32.500 / Gece)
+                </option>
+                <option value="Muhammed K Belek Golf & Spa" data-price="22000">
+                  Muhammed K Belek Golf & Spa (₺22.000 / Gece)
+                </option>
+                <option
+                  value="Muhammed K Bodrum Marina Konakları"
+                  data-price="28000"
+                >
+                  Muhammed K Bodrum Marina Konakları (₺28.000 / Gece)
+                </option>
+                <option
+                  value="Muhammed K Sapanca Göl Rezidansı"
+                  data-price="16800"
+                >
+                  Muhammed K Sapanca Göl Rezidansı (₺16.800 / Gece)
+                </option>
+                <option value="Muhammed K Alaçatı Taş Konak" data-price="15400">
+                  Muhammed K Alaçatı Taş Konak (₺15.400 / Gece)
+                </option>
+                <option value="Muhammed K Uludağ Kış Oteli" data-price="13500">
+                  Muhammed K Uludağ Kış Oteli (₺13.500 / Gece)
+                </option>
+                <option
+                  value="Muhammed K Trabzon Yayla Konakları"
+                  data-price="12900"
+                >
+                  Muhammed K Trabzon Yayla Konakları (₺12.900 / Gece)
+                </option>
+                <option
+                  value="Muhammed K Gaziantep Şehir Oteli"
+                  data-price="11200"
+                >
+                  Muhammed K Gaziantep Şehir Oteli (₺11.200 / Gece)
+                </option>
+                <option
+                  value="Muhammed K Kapadokya Mağara Saray"
+                  data-price="24500"
+                >
+                  Muhammed K Kapadokya Mağara Saray (₺24.500 / Gece)
+                </option>
+                <option value="Muhammed K Mardin Taş Sarayı" data-price="14800">
+                  Muhammed K Mardin Taş Sarayı (₺14.800 / Gece)
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="checkIn">GİRİŞ TARİHİ</label>
+              <input type="date" class="form-control" id="checkIn" required />
+            </div>
+
+            <div class="form-group">
+              <label for="checkOut">ÇIKIŞ TARİHİ</label>
+              <input type="date" class="form-control" id="checkOut" required />
+            </div>
+
+            <div class="form-group">
+              <label for="adultsCount">YETİŞKİN SAYISI</label>
+              <select class="form-control" id="adultsCount">
+                <option value="1">1 Yetişkin</option>
+                <option value="2" selected>2 Yetişkin</option>
+                <option value="3">3 Yetişkin</option>
+                <option value="4">4 Yetişkin</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="childrenCount"
+                >ÇOCUK SAYISI (0-12 YAŞ - %50 İNDİRİMLİ)</label
+              >
+              <select class="form-control" id="childrenCount">
+                <option value="0" selected>Çocuk Yok</option>
+                <option value="1">1 Çocuk</option>
+                <option value="2">2 Çocuk</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="suiteType">ODA / SÜİT TİPİ</label>
+              <select class="form-control" id="suiteType">
+                <option value="1" data-multiplier="1">
+                  Deluxe King Oda (Panoramik Manzara)
+                </option>
+                <option value="1.35" data-multiplier="1.35">
+                  Executive Bosphorus / Sea Süit (+%35)
+                </option>
+                <option value="2.2" data-multiplier="2.2">
+                  Presidential Lüks Süit (Özel Teras & Jakuzi) (+%120)
+                </option>
+              </select>
+            </div>
+          </div>
+
+          <div class="section-title">
+            <i class="fa-solid fa-user-shield"></i> 2. Kişisel Bilgiler & Ek
+            Hizmetler
+          </div>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="fullName">ADINIZ & SOYADINIZ</label>
+              <input
+                type="text"
+                id="fullName"
+                class="form-control"
+                placeholder="Adınız ve Soyadınız"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">TELEFON NUMARASI</label>
+              <input
+                type="tel"
+                id="phone"
+                class="form-control"
+                placeholder="Örn: 0532 123 45 67"
+                required
+              />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="email">E-POSTA ADRESİ</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="Örn: isim.soyisim@ornek.com"
+                required
+              />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="vipTransferSelect"
+                >HAVALİMANI VIP TRANSFER TALEBİ</label
+              >
+              <select class="form-control" id="vipTransferSelect">
+                <option value="0">Transfer Hizmeti İstemiyorum</option>
+                <option value="2500">
+                  Transfer Hizmeti İstiyorum (+₺2.500)
+                </option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="specialNotes">ÖZEL İSTEKLER & NOTLAR</label>
+              <textarea
+                id="specialNotes"
+                class="form-control"
+                rows="3"
+                placeholder="Yüksek kat tercihi, alerjen notları, kutlama planı veya özel isteklerinizi buraya yazabilirsiniz..."
+              ></textarea>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <aside class="summary-card shimmer-card">
+        <h3 class="summary-card-title">REZERVASYON ÖZETİ</h3>
+
+        <div class="summary-item">
+          <span>Seçilen Otel:</span>
+          <strong id="summaryHotel">-</strong>
+        </div>
+
+        <div class="summary-item">
+          <span>Konaklama Süresi:</span>
+          <strong id="summaryNights">1 Gece</strong>
+        </div>
+
+        <div class="summary-item">
+          <span>Misafir Dağılımı:</span>
+          <strong id="summaryGuests">2 Yetişkin</strong>
+        </div>
+
+        <div class="summary-item">
+          <span>Oda Tarifesi:</span>
+          <strong id="summaryRate">0 ₺ / Gece</strong>
+        </div>
+
+        <div class="summary-item">
+          <span>VIP Transfer:</span>
+          <strong id="summaryTransfer">Yok</strong>
+        </div>
+
+        <div class="summary-item">
+          <span>Vergiler & Hizmet (%10):</span>
+          <strong id="summaryTax">0 ₺</strong>
+        </div>
+
+        <div class="summary-total">
+          <span>TOPLAM TUTAR:</span>
+          <span id="summaryTotal">0 ₺</span>
+        </div>
+
+        <button type="submit" form="bookingForm" class="submit-btn">
+          REZERVASYONU ONAYLA
+        </button>
+      </aside>
+    </main>
+
+    <div class="modal" id="successModal">
+      <div class="modal-content-booking">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2>REZERVASYON TALEBİNİZ ALINDI</h2>
+        <p>
+          Müşteri ilişkileri temsilcimiz detayları teyit etmek ve özel karşılama
+          prosedürlerinizi başlatmak için sizinle en kısa sürede iletişime
+          geçecektir.
+        </p>
+        <button class="submit-btn modal-close-action">ANA SAYFAYA DÖN</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="brand-logo-container left">
+            <div class="brand-name medium">Muhammed K</div>
+            <div class="brand-sub wide">Luxury Hotel & Suites</div>
+          </div>
+          <p class="footer-text-top">
+            Global lüks konaklama standartlarını yeniden tanımlayan benzersiz
+            süitler ve kusursuz misafirperverlik.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hızlı Navigasyon</h4>
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="otellerimiz.html">Süitlerimiz & Odalar</a></li>
+            <li><a href="rezervasyon.html">Online Rezervasyon</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim & VIP Transfer</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sosyal Medya & Bülten</h4>
+          <p>Özel VIP ayrıcalıklardan haberdar olmak için takip edin.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="X / Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; <span id="currentYear"></span> Muhammed K Luxury Hotel & Suites.
+        <br />Bu Proje Eğitim Amaçlı Tasarlanmıştır. Hiçbir Ticari Amaç
+        Gütmemektedir.
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

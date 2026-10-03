@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim & VIP Concierge | Muhammed K - Luxury Hotel & Suites</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="preloader">
+      <div class="particles" id="particleContainer"></div>
+      <div class="brand-logo-container">
+        <div class="brand-name large">Muhammed K</div>
+        <div class="brand-sub">Luxury Hotel & Suites</div>
+      </div>
+      <div class="intro-progress"></div>
+    </div>
+
+    <header class="navbar">
+      <a href="index.html" class="hotel-logo">
+        <div class="brand-logo-container">
+          <div class="brand-name">Muhammed K</div>
+          <div class="brand-sub">Luxury Hotel & Suites</div>
+        </div>
+      </a>
+
+      <button
+        class="hamburger-btn"
+        id="hamburgerBtn"
+        aria-label="Menüyü Aç/Kapat"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li>
+            <a href="index.html">
+              <i class="fa-solid fa-house nav-icon"></i> Ana Sayfa
+            </a>
+          </li>
+          <li><a href="otellerimiz.html">Otellerimiz</a></li>
+          <li><a href="rezervasyon.html">Rezervasyon</a></li>
+          <li><a href="hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="iletisim.html" class="active">İletişim</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="page-header">
+      <div class="trust-badge">
+        <i class="fa-solid fa-headset"></i> 7/24 VIP CONCIERGE
+      </div>
+      <h1>Bizimle İletişime Geçin</h1>
+      <p>
+        Özel rezervasyon talepleriniz, organizasyon detaylarınız ve
+        kişiselleştirilmiş konaklama ayrıcalıklarınız için temsilcilerimiz
+        hazır.
+      </p>
+    </section>
+
+    <main class="contact-container">
+      <div class="info-cards-grid">
+        <div class="info-card shimmer-card">
+          <i class="fa-solid fa-building-columns"></i>
+          <h3>Genel Merkez & Yönetim</h3>
+          <p>
+            Seçkin Mülkler & VIP Karşılama Merkezleri<br />Erzurum / Türkiye
+          </p>
+        </div>
+
+        <div class="info-card shimmer-card">
+          <i class="fa-solid fa-phone-volume"></i>
+          <h3>VIP Danışma Hatları</h3>
+          <p>+90 (212) XXX XX XX<br />+90 (5XX) XXX XX XX (WhatsApp)</p>
+        </div>
+
+        <div class="info-card shimmer-card">
+          <i class="fa-solid fa-envelope-open-text"></i>
+          <h3>E-Posta Adresleri</h3>
+          <p>vip@muhammedkhotels.com<br />concierge@muhammedkhotels.com</p>
+        </div>
+      </div>
+
+      <div class="contact-main-grid">
+        <div class="form-card shimmer-card">
+          <div class="section-title">
+            <i class="fa-solid fa-paper-plane"></i> İletişim Formu
+          </div>
+
+          <form id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="contactName">ADINIZ & SOYADINIZ</label>
+                <input
+                  type="text"
+                  id="contactName"
+                  class="form-control"
+                  placeholder="Adınız ve Soyadınız"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="contactPhone">TELEFON NUMARASI</label>
+                <input
+                  type="tel"
+                  id="contactPhone"
+                  class="form-control"
+                  placeholder="+90 (5XX) XXX XX XX"
+                  required
+                />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contactEmail">E-POSTA ADRESİ</label>
+                <input
+                  type="email"
+                  id="contactEmail"
+                  class="form-control"
+                  placeholder="Örn: isim.soyisim@ornek.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contactSubject">TALEP KONUSU</label>
+                <select id="contactSubject" class="form-control" required>
+                  <option value="" disabled selected>
+                    Lütfen konu seçiniz...
+                  </option>
+                  <option value="1">Özel Süit & VIP Konaklama Talebi</option>
+                  <option value="2">Özel Etkinlik & Davet Organizasyonu</option>
+                  <option value="3">Kurumsal İş Ortaklığı & Basın</option>
+                  <option value="4">Görüş & Özel Hizmet Talebi</option>
+                </select>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="contactMessage">MESAJINIZ</label>
+                <textarea
+                  id="contactMessage"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Taleplerinizi ve özel isteklerinizi detaylıca belirtebilirsiniz..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-group full-width">
+                <button type="submit" class="submit-btn">MESAJI GÖNDER</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="map-card shimmer-card">
+          <div class="section-title">
+            <i class="fa-solid fa-compass"></i> Lokasyon & Konum
+          </div>
+
+          <div class="map-frame">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48965.09267460571!2d41.22231686284564!3d39.91189271015943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406e5f28a5eb94f1%3A0x10e3fd56abbfb86!2sErzurum!5e0!3m2!1str!2str!4v1790992202092!5m2!1str!2str"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="modal" id="successModal">
+      <div class="modal-content-booking">
+        <i class="fa-solid fa-circle-check"></i>
+        <h2>MESAJINIZ İLETİLDİ</h2>
+        <p>
+          VIP Concierge ekibimiz talebinizi değerlendirerek en kısa sürede
+          tarafınıza dönüş sağlayacaktır.
+        </p>
+        <button class="submit-btn modal-close-action">TAMAM</button>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-col">
+          <div class="brand-logo-container left">
+            <div class="brand-name medium">Muhammed K</div>
+            <div class="brand-sub wide">Luxury Hotel & Suites</div>
+          </div>
+          <p class="footer-text-top">
+            Global lüks konaklama standartlarını yeniden tanımlayan benzersiz
+            süitler ve kusursuz misafirperverlik.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Hızlı Navigasyon</h4>
+          <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="otellerimiz.html">Süitlerimiz & Odalar</a></li>
+            <li><a href="rezervasyon.html">Online Rezervasyon</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="iletisim.html">İletişim & Karşılama</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Sosyal Medya & Bülten</h4>
+          <p>Özel VIP ayrıcalıklardan haberdar olmak için takip edin.</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Instagram"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Facebook"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="X / Twitter"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; <span id="currentYear"></span> Muhammed K Luxury Hotel & Suites.
+        <br />Bu Proje Eğitim Amaçlı Tasarlanmıştır. Hiçbir Ticari Amaç
+        Gütmemektedir.
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
